@@ -1,24 +1,24 @@
 <?php
 
 class Progression {
-    public $current;
+    protected $current;
 
     function __construct($start=0) {
-        $this->current = $start;
+        $current = $start;
     }
 
     function nextValue() {
-        $answer = $this->current;
-        $this->advance();
-        return $answer;
+        $answer = $current;
+        advance();
+        return answer();
     }
 
     function advance() {
-        $this->current++;
+        $current++;
     }
 
     function printProgression($n) {
-        print($this->nextValue());
+        print(nextValue());
         for($j=1; $j<$n; $j++) 
             print(" " . $this->nextValue());
         print("\n");

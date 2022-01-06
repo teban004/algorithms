@@ -4,17 +4,17 @@ class Progression {
     public $current;
 
     function __construct($start=0) {
-        $this->current = $start;
+        $this->$current = $start;
     }
 
     function nextValue() {
-        $answer = $this->current;
+        $answer = $this->$current;
         $this->advance();
         return $answer;
     }
 
     function advance() {
-        $this->current++;
+        $this->$current++;
     }
 
     function printProgression($n) {
