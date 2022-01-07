@@ -63,11 +63,8 @@ class FibonacciProgression extends Progression {
         $this->prev = $second - $first; //fictitious value preceding the first
     }
 
-    // Replaces (prev,current) with (current, current+prev)
     function advance() {
-        $temp = $this->prev;
-        $this->prev = $this->current;
-        $this->current += $temp;
+        
     }
 }
 

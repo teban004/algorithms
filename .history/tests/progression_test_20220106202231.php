@@ -11,10 +11,7 @@
     $myArithmeticProgression->printProgression(5);
 
     print("Geometric progression: ");
-    $myGeometricProgression = new GeometricProgression(3);
-    $myGeometricProgression->printProgression(6);
+    $myGeometricProgression = new GeometricProgression(2);
+    $myGeometricProgression->printProgression(5);
 
-    print("Fibonacci progression: ");
-    $myFibonacciProgression = new FibonacciProgression(1,1);
-    $myFibonacciProgression->printProgression(15);
 ?>

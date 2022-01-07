@@ -15,6 +15,6 @@
     $myGeometricProgression->printProgression(6);
 
     print("Fibonacci progression: ");
-    $myFibonacciProgression = new FibonacciProgression(1,1);
-    $myFibonacciProgression->printProgression(15);
+    $myFibonacciProgression = new FibonacciProgression(3,5);
+    $myFibonacciProgression->printProgression(10);
 ?>

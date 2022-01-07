@@ -54,21 +54,4 @@ class GeometricProgression extends Progression {
     }
 }
 
-class FibonacciProgression extends Progression {
-    public $prev;
-
-    // Constructs generalized Fibonacci, with first and second values
-    function __construct($first=0, $second=1) {
-        parent::__construct($first);
-        $this->prev = $second - $first; //fictitious value preceding the first
-    }
-
-    // Replaces (prev,current) with (current, current+prev)
-    function advance() {
-        $temp = $this->prev;
-        $this->prev = $this->current;
-        $this->current += $temp;
-    }
-}
-
 ?>

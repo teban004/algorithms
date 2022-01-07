@@ -44,30 +44,13 @@ class GeometricProgression extends Progression {
     public $base;
 
     // Constructs geometric progression with arbitrary base and start
-    function __construct($b=2, $start=1) {
+    function __construct($b, $start) {
         parent::__construct($start);
         $this->base = $b;
     }
 
     function advance() {
         $this->current *= $this->base;
-    }
-}
-
-class FibonacciProgression extends Progression {
-    public $prev;
-
-    // Constructs generalized Fibonacci, with first and second values
-    function __construct($first=0, $second=1) {
-        parent::__construct($first);
-        $this->prev = $second - $first; //fictitious value preceding the first
-    }
-
-    // Replaces (prev,current) with (current, current+prev)
-    function advance() {
-        $temp = $this->prev;
-        $this->prev = $this->current;
-        $this->current += $temp;
     }
 }
 
